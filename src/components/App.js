@@ -13,8 +13,12 @@ const App = () => {
     fontSize: "60px",
   };
 
+  // obiekt przyjmująca dwie zmienne,klucz i wartość
   const NavStyles = {
     primaryColor: "yellow",
+    primaryFontSize: "30px",
+    // &.selected{
+    //   text-decoration: underline
   };
 
   const AllStyles = {

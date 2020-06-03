@@ -12,14 +12,15 @@ const StyledH1 = Styled.h1`
 function Career() {
   return (
     <ThemeContext.Consumer>
-      {(value) => (
+      {(context) => (
         <div className="gallery">
           <StyledH1
+            // obiekty są w {}, szczypiorek jest na sztywno wpisany, {value.h1Styles.color} i {value.h1Styles.fontSize} są zmienne
             szczypiorek={"15px"}
-            color={value.h1Styles.color}
-            maslanka={value.h1Styles.fontSize}
+            color={context.h1Styles.color}
+            maslanka={context.h1Styles.fontSize}
           >
-            Welcome {value.h1Styles.color} in Carrer rrrrr!
+            Welcome {context.h1Styles.color} in Carrer rrrrr!
           </StyledH1>
         </div>
       )}
